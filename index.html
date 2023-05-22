@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Web Shop</h1>
+  <div class="cart-container">
+    <div class="wallet">Wallet: <span class="wallet-amount">100$</span></div>
+    <button class="cart-button">Cart <span class="cart-badge">0</span></button>
+    <div class="sort-dropdown">
+      <button class="sort-button">Sort By: <span class="current-sort"> None</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" data-sort="a-z">Name: A-Z</a>
+        <a href="#" data-sort="z-a">Name: Z-A</a>
+        <a href="#" data-sort="price-low-to-high">Price: Low to High</a>
+        <a href="#" data-sort="price-high-to-low">Price: High to Low</a>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="items-grid">
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <div id="purchase-message" style="display: none;">
+        <h1>Thank you for your purchase!</h1>
+        <button class="close-btn">Close</button>
+      </div>
+      <div class="modal-cart">
+        <span class="close">&times;</span>
+        <h2>Cart</h2>
+        <ul class="cart-items"></ul>
+        <p>Total: <span class="cart-total">$0.00</span></p>
+        <button class="buy-btn">Buy</button>
+        <div class="empty-cart-msg" style="display: none;">
+          Your cart is empty
+        </div>
+        <div class="not-enough-money" style="display: none;">
+          Not enough money
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="items.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
